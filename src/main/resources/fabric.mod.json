@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "zombieclient",
+  "version": "${version}",
+  "name": "Zombie Client",
+  "description": "Cheat-style client for private worlds with friends. Right Shift opens the menu.",
+  "authors": ["You"],
+  "environment": "client",
+  "entrypoints": { "client": ["dev.zombie.ZombieClient"] },
+  "mixins": ["zombieclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
